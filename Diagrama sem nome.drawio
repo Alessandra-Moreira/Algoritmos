@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-02T03:09:49.804Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="P-zsfsPPI-3lUaU7KFQA" version="20.8.23" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-02T03:11:55.949Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="Q6Onsmq_Xtm7_aozfKBT" version="20.8.23" type="github" pages="2">
   <diagram name="Página-1" id="Rwl7vRHBjynDdYccHwj0">
     <mxGraphModel dx="880" dy="476" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -47,6 +47,35 @@
         </mxCell>
         <mxCell id="4D8IRq2ot2XQXnIgQL8H-16" value="fim" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="145" y="480" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="a6ntMmI4DKOypNww3Zgz" name="Página-2">
+    <mxGraphModel dx="880" dy="476" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="d0E9buImNsuPqHO_lubp-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="d0E9buImNsuPqHO_lubp-2" target="d0E9buImNsuPqHO_lubp-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d0E9buImNsuPqHO_lubp-2" value="Inicio" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="105" y="10" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="d0E9buImNsuPqHO_lubp-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="d0E9buImNsuPqHO_lubp-4" target="d0E9buImNsuPqHO_lubp-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d0E9buImNsuPqHO_lubp-4" value="gastosJaneiro,&lt;br&gt;gastosFeveiro, gastosMarco&amp;nbsp;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="180" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="d0E9buImNsuPqHO_lubp-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="d0E9buImNsuPqHO_lubp-6" target="d0E9buImNsuPqHO_lubp-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d0E9buImNsuPqHO_lubp-6" value="gastosTrimestre = gastosJaneiro + gastosFeveiro + gastosMarco" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="330" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="d0E9buImNsuPqHO_lubp-7" value="Fim" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="105" y="485" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
