@@ -1,23 +1,24 @@
 # 1 Sorteie 10 inteiros entre 1 e 100 para uma lista e descubra o maior e o menor valor, sem usar as funções max e min.
 import random
 
-lista = random.sample(range(1, 100), 10) # sorteia uma quantidade de números entre quantos forem definidos
+# sorteia uma quantidade de números entre quantos forem definidos
+lista = random.sample(range(1, 100), 10)
 maior = menor = lista[0]
 x = 1
 while x < 10:
     if lista[x] > maior:
         maior = lista[x]
     if lista[x] < menor:
-        menor = lista[x] 
+        menor = lista[x]
     x += 1
 print(lista)
 print(f"O maior número é: {maior}")
 print(f"O menor número é: {menor}")
 
-# Sorteie 20 inteiros entre 1 e 100 numa lista. Armazene os números pares na lista PAR e os números ímpares na lista IMPAR. 
+# Sorteie 20 inteiros entre 1 e 100 numa lista. Armazene os números pares na lista PAR e os números ímpares na lista IMPAR.
 # Imprima as três listas.
 
-n = random.sample(range(100),20)
+n = random.sample(range(1, 100), 20)
 x = 0
 par = []
 impar = []
@@ -28,13 +29,62 @@ while x < 20:
         impar.append(n[x])
     x += 1
 
-print (f"Lista: {n}")
+print(f"Lista: {n}")
 print(f"Pares: {par}")
 print(f"Impares: {impar}")
 
 # 3
 
+vetor1 = random.sample(range(100), 10)
+vetor2 = random.sample(range(100), 10)
+vetor3 = []
+x = 0
+y = 0
+while x < 10 and y < 10:
+    vetor3.append(vetor1[x])
+    vetor3.append(vetor2[y])
+    x += 1
+    y += 1
 
+print(vetor1)
+print(vetor2)
+print(vetor3)
 
+# 4
+text = '''The Python Software Foundation and the global Python community welcome and encourage participation by everyone. 
+Our community is based on mutual respect, tolerance, and encouragement, and we are working to help each other live up to these principles.
+We want our community to be more diverse: whoever you are, and whatever your background, we welcome you.'''
 
+text = text.replace(":", "").replace(",", "").replace(".", "")
+text = text.lower()
+new_text = text.split()
 
+lista = []
+for p in new_text:
+    if p[0] in "python" or p[-1] in "python":
+        lista.append(p)
+
+print(lista)
+
+# 5
+text = '''The Python Software Foundation and the global Python community welcome and encourage participation by everyone. 
+Our community is based on mutual respect, tolerance, and encouragement, and we are working to help each other live up to these principles.
+We want our community to be more diverse: whoever you are, and whatever your background, we welcome you.'''
+
+text = text.replace(":", "").replace(",", "").replace(".", "")
+text = text.lower()
+new_text = text.split()
+
+def search(palavra):
+    for letra in palavra:
+        if letra in "python":
+            return True
+    return False
+        
+lista = []
+for p in new_text:
+    if search(p) and len(p) > 4:
+        lista.append(p)
+
+print(lista)
+print(len(lista))
