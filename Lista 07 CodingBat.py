@@ -15,14 +15,18 @@ def multstring(s, n):
 
 
 def string_splosion(s):
-    return s[0] + s[0:2] + s[0:3] + s
+    k = 1
+    resposta = ""
+    while k <= len(s):
+        resposta += s[:k]
+        k += 1
+    return resposta 
 
 # C. array_count9
 # conta quantas vezes aparece o 9 numa lista nums
 
 
 def array_count9(nums):
-    i = 0
     cont = 0
     for i in nums:
         if i == 9:
@@ -37,7 +41,9 @@ def array_count9(nums):
 
 
 def array_front9(nums):
-    return
+    return 9 in nums[:4]
+
+        
 
 
 # E. hello_name
@@ -55,7 +61,8 @@ def hello_name(name):
 
 
 def make_tags(tab, word):
-    return
+    text = f"<{tab}>{word}</{tab}>"
+    return text
 
 # G. extra_end
 # seja um string s com no mínimo duas letras
@@ -80,7 +87,8 @@ def extra_end(s):
 
 
 def first_half(s):
-    return
+    half = int(len(s)/2)
+    return s[0:half]
 
 # I. sem_pontas
 # seja uma string s de pelo menos dois caracteres
@@ -91,7 +99,8 @@ def first_half(s):
 
 
 def sem_pontas(s):
-    return
+    if len(s) >= 2:
+        return s[1:-1]
 
 # J. roda2
 # rodar uma string s duas posições
@@ -101,7 +110,7 @@ def sem_pontas(s):
 
 
 def roda2(s):
-    return
+    return s[2:] + s[:2]
 
 
 # Provided simple test() function used in main() to print
