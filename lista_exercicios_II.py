@@ -86,3 +86,4 @@ else:
 valor_total = 80 * latas
 print(f"Quantidade de latas: {latas}")
 print(f"Valor total: R${valor_total:.2f}")
+
